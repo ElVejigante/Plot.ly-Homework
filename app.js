@@ -1,4 +1,3 @@
-// 1. Use the D3 library to read in `samples.json`.
 function init() {
     d3.json('samples.json').then((dataSamples)=>{
     var dropDown = d3.select('#selDataset');
@@ -16,7 +15,9 @@ function init() {
 function optionChanged(values) {
     d3.json('samples.json').then((dataSamples)=>{
         var samples = dataSamples.samples
-        console.log(samples);
+        //console.log(samples);
+        var filterSampleId = samples.filter(value => value.id == values);
+        //console.log(filterSampleId);
     });
 };
 
