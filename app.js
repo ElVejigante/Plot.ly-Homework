@@ -18,6 +18,9 @@ function optionChanged(values) {
         //console.log(samples);
         var filterSampleId = samples.filter(value => value.id == values);
         //console.log(filterSampleId);
+        var subjectID = filterSampleId[0].id
+        //console.log(subjectID);
+        
     });
 };
 
