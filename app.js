@@ -13,5 +13,13 @@ function init() {
 });
 };
 
+function optionChanged(values) {
+    d3.json('samples.json').then((dataSamples)=>{
+        var samples = dataSamples.samples
+        console.log(samples);
+    });
+};
+
+// Initialize dashboard
 init();
 
