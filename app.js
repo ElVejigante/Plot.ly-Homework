@@ -77,7 +77,11 @@ function optionChanged(values) {
         //console.log(metadata);
 
         var filterMetaID = metadata.filter(value => value.id == values);
-        console.log(filterMetaID[0]);
+        //console.log(filterMetaID[0]);
+
+        Object.entries(filterMetaID[0]).forEach(([key, value]) => {
+            info.append('h6').html(`${key}:${value}`);
+        });
     });
 };
 
