@@ -24,6 +24,11 @@ function optionChanged(values) {
         //console.log(result);
         var otuIDs = result.otu_ids;
         //console.log(otuIDs);
+        var otuLabels = result.otu_labels;
+        //console.log(otuLabels);
+        var sampleValues = result.sample_values;
+        console.log(sampleValues);
+
     });
 };
 
