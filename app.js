@@ -82,6 +82,8 @@ function optionChanged(values) {
         Object.entries(filterMetaID[0]).forEach(([key, value]) => {
             info.append('h6').html(`${key}:${value}`);
         });
+        var washFreq = filterMetaID[0].wfreq;
+        console.log(washFreq);
     });
 };
 
