@@ -71,10 +71,10 @@ function optionChanged(values) {
         //Demographic Info
         var info = d3.select('#sample-metadata');
         //console.log(info);
-        
+
         info.html('');
         var metadata = dataSamples.metadata;
-        console.log(metadata);
+        //console.log(metadata);
     });
 };
 
