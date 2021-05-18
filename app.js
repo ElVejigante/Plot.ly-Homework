@@ -31,7 +31,7 @@ function optionChanged(values) {
 
         var sampleValues = result.sample_values;
         //console.log(sampleValues);
-        
+
         var yTicks = otuIDs.slice(0,10).map(otuID => `OTU ${otuID}`).reverse();
         //console.log(yTicks);
         
@@ -67,6 +67,9 @@ function optionChanged(values) {
             yaxis: {title: "Sample Values"},
         };
         Plotly.newPlot('bubble', bubbleTrace, bubbleLayout);
+
+        //Demographic Info
+        
     });
 };
 
