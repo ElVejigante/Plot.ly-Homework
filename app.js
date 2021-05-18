@@ -75,6 +75,9 @@ function optionChanged(values) {
         info.html('');
         var metadata = dataSamples.metadata;
         //console.log(metadata);
+
+        var filterMetaID = metadata.filter(value => value.id == values);
+        console.log(filterMetaID[0]);
     });
 };
 
