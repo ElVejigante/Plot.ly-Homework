@@ -14,13 +14,16 @@ function init() {
 
 function optionChanged(values) {
     d3.json('samples.json').then((dataSamples)=>{
-        var samples = dataSamples.samples
+        var samples = dataSamples.samples;
         //console.log(samples);
-        var filterSampleId = samples.filter(value => value.id == values);
-        //console.log(filterSampleId);
-        var subjectID = filterSampleId[0].id
+        var filterSampleID = samples.filter(value => value.id == values);
+        //console.log(filterSampleID);
+        var subjectID = filterSampleID[0].id;
         //console.log(subjectID);
-        
+        var result = filterSampleID[0];
+        //console.log(result);
+        var otuIDs = result.otu_ids;
+        //console.log(otuIDs);
     });
 };
 
