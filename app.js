@@ -27,7 +27,9 @@ function optionChanged(values) {
         var otuLabels = result.otu_labels;
         //console.log(otuLabels);
         var sampleValues = result.sample_values;
-        console.log(sampleValues);
+        //console.log(sampleValues);
+        var yTicks = otuIDs.slice(0,10).map(otuID => `OTU ${otuID}`).reverse();
+        console.log(yTicks);
 
     });
 };
