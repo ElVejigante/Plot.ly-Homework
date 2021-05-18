@@ -69,7 +69,8 @@ function optionChanged(values) {
         Plotly.newPlot('bubble', bubbleTrace, bubbleLayout);
 
         //Demographic Info
-        
+        var info = d3.select('#sample-metadata');
+        console.log(info);
     });
 };
 
