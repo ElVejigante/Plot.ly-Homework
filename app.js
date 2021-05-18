@@ -36,7 +36,7 @@ function optionChanged(values) {
             orientation: 'h',
         }];
         var barLayout = {
-            title: "Top 10 OTU's for Individual",
+            title: "Top 10 OTU's for Test Subject",
             xaxis: {title: "Sample Values"},
             yaxis: {title: "OTU's"},
         };
