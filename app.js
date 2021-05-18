@@ -83,7 +83,7 @@ function optionChanged(values) {
             info.append('h6').html(`${key}:${value}`);
         });
         var washFreq = filterMetaID[0].wfreq;
-        console.log(washFreq);
+        //console.log(washFreq);
     });
 };
 
